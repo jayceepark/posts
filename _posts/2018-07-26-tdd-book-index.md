@@ -1,6 +1,7 @@
 ---
 title: Quick start TDD with eGovFW 기획
 author: 박종철
+published:
 --- 
 
 # 책 제목
