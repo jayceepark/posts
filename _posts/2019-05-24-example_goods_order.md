@@ -16,6 +16,11 @@ submit되는 input들과 파라미터 조작에 대한 내부 대응은 추가�
 
 
 ## 셀렉트박스의 상품 선택하여 html에 추가하기
+
+
+![image](https://user-images.githubusercontent.com/35021788/58295076-3c6b1680-7e08-11e9-85d6-0e6c48a584e1.png)
+
+
 ``` html
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
@@ -193,6 +198,11 @@ $(function() {
 
 
 ## 어른/청소년/아이 인원 입력받고, 정원 초과한 인워만큼 초과인원 요금 계산하기
+
+
+![image](https://user-images.githubusercontent.com/35021788/58295082-4bea5f80-7e08-11e9-850a-f39bc4581a06.png)
+
+
 ``` html
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script>
