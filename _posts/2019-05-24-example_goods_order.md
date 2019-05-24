@@ -30,7 +30,6 @@ submit되는 input들과 파라미터 조작에 대한 내부 대응은 추가�
 </select>
 <button id="btnAddGoods" style="height:40px;">추가</button>
 </br>
-<input id="srchDt" name="srchDt" value="20190314">
 </br>
 
 <div id="container">
