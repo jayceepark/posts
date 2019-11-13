@@ -102,7 +102,7 @@ public void runValidJob(Map<String, Object> dsBatchCondMap, Map<String, Object> 
 						validateNo = (String) validateNoMap.get("VALIDATE_NO");
 						batchInfo.put("VALIDATE_NO", validateNo);
 						batchInfo.put("UESR_ID", userId);
-						commonMapper.insert("CmLg070.saveValidateMst",batchInfo);
+						commonMapper.insert("saveValidateMst",batchInfo);
 					}*/
 					String valKeyNm = (String)mainMap.get("VAL_KEY");
 					
@@ -130,10 +130,10 @@ public void runValidJob(Map<String, Object> dsBatchCondMap, Map<String, Object> 
 							saveMap.put("TARGET_VALUE", targetMap.get(mainKey));
 							if(sourceValue.compareTo(targetValue)==0){
 								saveMap.put("VALIDATE_YN", "1");
-								commonMapper.insert("CmLg070.saveValidateDtl", saveMap);
+								commonMapper.insert("saveValidateDtl", saveMap);
 							}else{
 								saveMap.put("VALIDATE_YN", "0");
-								commonMapper.insert("CmLg070.saveValidateDtl", saveMap);
+								commonMapper.insert("saveValidateDtl", saveMap);
 							}
 						}else{
 							String sourceValue = (String) mainMap.get(mainKey);
@@ -149,10 +149,10 @@ public void runValidJob(Map<String, Object> dsBatchCondMap, Map<String, Object> 
 
 							if(sourceValue.equals(targetValue)){
 								saveMap.put("VALIDATE_YN", "1");
-								commonMapper.insert("CmLg070.saveValidateDtl", saveMap);
+								commonMapper.insert("saveValidateDtl", saveMap);
 							}else{
 								saveMap.put("VALIDATE_YN", "0");
-								commonMapper.insert("CmLg070.saveValidateDtl", saveMap);
+								commonMapper.insert("saveValidateDtl", saveMap);
 							}
 						}
 						
@@ -168,7 +168,7 @@ public void runValidJob(Map<String, Object> dsBatchCondMap, Map<String, Object> 
 				validateCheckMap.put("VALIDATE_YN","0");
 				validateCheckMap.put("VALIDATE_RESULT_MSG","메인과 TARGET의 결과로우수가 일치 하지 않습니다.");
 				validateCheckMap.put("VALIDATE_NO",validateNo);
-				commonMapper.update("CmLg070.saveValidateEnd",validateCheckMap);
+				commonMapper.update("saveValidateEnd",validateCheckMap);
 			}
 			
 		}
