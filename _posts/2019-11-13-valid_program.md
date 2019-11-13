@@ -87,7 +87,7 @@ public void runValidJob(Map<String, Object> dsBatchCondMap, Map<String, Object> 
 			String validateNo = (String) validateNoMap.get("VALIDATE_NO");
 			batchInfo.put("VALIDATE_NO", validateNo);
 			batchInfo.put("UESR_ID", userId);
-			commonMapper.insert("CmLg070.saveValidateMst",batchInfo);
+			commonMapper.insert("saveValidateMst",batchInfo);
 			
 			int seq = 0;
 			if(mainList.size() == targetList.size()){
