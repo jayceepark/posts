@@ -10,8 +10,7 @@ tag: java
 ---
 
 # 1.람다(lambda)와 익명 함수
-람다는 나온지는 꽤 됐지만.. 한번 더 정리해본다.
-자바 1.8부터 사용 가능하고 익명함수를 사용한다.
+람다는 자바 8부터 사용 가능하고 익명함수를 사용한다.
 익명함수란 무엇일까?
 전통적으로 함수 또는 메소드를 만들 때 메소드를 선언하고 선언한 메소드를 호출하는 2단계를 거치게 된다.
 
@@ -24,10 +23,10 @@ public String makeCurrentStr(int amt, String currencyType){
 //...생략...
 
 //호출
-makeCurrentStr(10000, "WON");
+String goodsAmt = makeCurrentStr(10000, "WON");
 ```
 
-만약 한번만 사용할 메소드를 위와같이 처리해야한다면 굉장히 귀찮은 과정이다. 왜냐하면 아래 세단계를 거친다.
+만약 한번만 사용할 메소드를 위와같이 처리해야한다면 굉장히 귀찮은 과정이다. 왜냐하면 아래 세 단계를 거친다.
 1. 메소드명을 고민한다.
 2. 메소드를 선언/구현한다.
 3. 메소드를 호출한다.
@@ -50,7 +49,7 @@ public String makeCurrentStrAsIs(int amt, String currencyType){
 //...생략...
 
 //호출
-makeCurrentStrAsIs(10000, "WON");
+String goodsAmt = makeCurrentStrAsIs(10000, "WON");
 
 //TO-BE 람다식 사용
 //선언부 필요없음
@@ -58,10 +57,10 @@ makeCurrentStrAsIs(10000, "WON");
 //...생략...
 
 //호출
-(int amt, String currencyType)->return amt+currencyType;
+String goodsAmt = (int amt, String currencyType) -> return amt+currencyType;
 ```
 
-이외에도 병렬프로그램에 용이하다. 여러개의 쓰레드를 활용하여 수행시간을 단축시킬 수 있다.
+이외에도 스트림과 사용 시 병렬프로그램에 용이하다. 여러개의 쓰레드를 활용하여 수행시간을 단축시킬 수 있다.
 
 
 # 2.스트림(Stream)
