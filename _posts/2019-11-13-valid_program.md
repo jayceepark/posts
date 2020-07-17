@@ -175,5 +175,3 @@ public void runValidJob(Map<String, Object> dsBatchCondMap, Map<String, Object> 
 	}
 ```
 
-
-## 매퍼
