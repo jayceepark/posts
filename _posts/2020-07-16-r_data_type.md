@@ -1,6 +1,6 @@
 ---
 
-title: R 언어 데이터 유형
+title: R 언어 기초 - 데이터 유형
 author: jaycee
 category: oracle
 published : true
@@ -8,7 +8,7 @@ tag: R language, R 기초
 
 ---
 
-# 변수의 종류
+## 변수의 종류
 1. 범주형 변수 (categorical variables)
   - 질적인 변수(qualitative)
   - 자료가 가질 수 있는 값이 몇 개의 범주로 국한
@@ -25,7 +25,7 @@ tag: R language, R 기초
      + 히스토그램, 상자그림, 선 도표로 시각화 가능
   >정렬이나 합계에 기반한 요약
   
-# 데이터 유형
+## 데이터 유형
   - 기본 데이터 유형
     + 수치형(numeric): 정수형 또는 실수형
     + 논리형(logical): 참/거짓, 참(T/TRUE) or 거짓(F/FALSE)
@@ -38,7 +38,7 @@ tag: R language, R 기초
     + NaN: 수학적으로 정의가 불가능
     + Inf, -Inf: 무한대
  
-# R 객체
+## R 객체
   - 벡터(Vector)
     + R에서 사용되는 대부분의 데이터 객체를 벡터를 통해 생성
     + 하나의 변수와 같이 취급되므로 하나의 벡터에 입력되는 데이터의 속성은 모두 동일
