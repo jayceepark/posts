@@ -2,7 +2,6 @@
 
 title: 오라클 프로시져에서 여러 필드의 빈값 유효성 일괄 검증
 author: jaycee
-description: 오라클 프로시져에서 여러 필드의 빈값 유효성 검증을 배열을 이용하여 한번에 하기
 category: oracle
 published : true
 tag: oracle
