@@ -1,6 +1,6 @@
 ---
 
-title: R 언어 기초 - 데이터 유형
+title: 자바 개발자가 배우는 R 언어 정리(1) - R 언어 기초/데이터 유형
 author: jaycee
 category: oracle
 published : true
