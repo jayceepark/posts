@@ -2,7 +2,7 @@
 
 title: 자바 개발자가 이해하는 R 언어(1) - R 언어 기초/데이터 유형
 author: jaycee
-category: oracle
+category: R language
 published : true
 tag: R language, R 기초
 
