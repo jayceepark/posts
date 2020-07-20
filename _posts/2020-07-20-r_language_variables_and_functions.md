@@ -66,7 +66,6 @@ rep(c(4,2), each=3) ## 각각 반복
 ```
 
 ### 범주형 자료
-# 요인(범주형 자료)
 ```R
 #factor(obj, levels=변수값, labels=요인이름)
 #2PPT - 16
