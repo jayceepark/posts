@@ -2,7 +2,6 @@
 
 title: 자바 람다/스트림 활용
 author: jaycee
-description: 이미 옛날 기술이지만 지금이라도 람다와 스트림을 사용해보자
 category: java
 published : true
 tag: java
