@@ -26,9 +26,6 @@ read.csv(file='파일경로/파일명', header=T, skip=0, fileEncoding='')
 ### TXT 불러오기
 read.table(con='파일경로/파일명' header='', fileEncoding='',na.strings='')
 - na.strings:결측으로 처리하기
-```R
-
-```
 
 ### 엑셀 불러오기
 엑셀을 불러올 땐 openxlsx 라이브러리를 이용한다
