@@ -1,6 +1,6 @@
 ---
 
-title: 자바 개발자가 이해하는 R 언어(3) - R 언어 기초/외부 파일 읽기쓰기 및 가공
+title: 자바 개발자가 이해하는 R 언어(3) - R 언어 기초/외부 파일 불러오기,내보내기
 author: jaycee
 category: R language
 published : true
