@@ -17,6 +17,7 @@ library(패키지명)
 
 ## 파일 불러오기
 read 를 이용한다. 자바에 비해 굉장히 쉽다.
+
 ### CSV 불러오기
 read.csv(file='파일경로/파일명', header=T, skip=0, fileEncoding='')
 - file:불러올 파일의 경로와 이름
@@ -29,8 +30,11 @@ read.table(con='파일경로/파일명' header='', fileEncoding='',na.strings=''
 
 ### 엑셀 불러오기
 엑셀을 불러올 땐 openxlsx 라이브러리를 이용한다
+
 install.package(pkgs='openxlsx')
+
 library(openxlsx)
+
 read.xlsx(xlsxFile='파일경로/파일이름', sheet=1, startRow=1)
 - sheet:불러올 시트 번호 지정
 - startRow:불러오기를 시작할 행번호
