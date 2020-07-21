@@ -29,12 +29,9 @@ read.table(con='파일경로/파일명' header='', fileEncoding='',na.strings=''
 - na.strings:결측으로 처리하기
 
 ### 엑셀 불러오기
-엑셀을 불러올 땐 openxlsx 라이브러리를 이용한다
-
-install.package(pkgs='openxlsx')
-
-library(openxlsx)
-
+엑셀을 불러올 땐 openxlsx 라이브러리를 이용한다  
+install.package(pkgs='openxlsx')  
+library(openxlsx)  
 read.xlsx(xlsxFile='파일경로/파일이름', sheet=1, startRow=1)
 - sheet:불러올 시트 번호 지정
 - startRow:불러오기를 시작할 행번호
