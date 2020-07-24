@@ -47,34 +47,49 @@ frmRand1[,c(-4,-5)]
 
 ## 행/열 추가/삭제
 ### 열추가
-#### 데이터에 직접 열 추가
+#### 데이터에 직접 접근하여 열 추가
 - Data$추가할행이름 <- 추가할값
-- Data[,c("AA","BB","CC)]
+```R
+tmp_df <- data.frame(AA = c(1:6), BB = c("A","A","B","B","B","C"))
+tmp_df$CC <- 1
+tmp_df[,c("AA","CC")] #tmp_df에 CC가 추가됨
+```
 
 #### cbind 함수 사용 열 추가
 변수 구성이 같은 데이터를 열로 결합. 행의 수가 같아야한다.
 cbind(Data1,Data2) 
-
-### 열제거
-Data 괄호 안에 지울 행의 열을 적고 마이너스 기호를 붙여준다. 열 명칭으로는 제거가 불가능함.  
-Data[, -1] 
-
-### 행추가
-변수구성이 같은 Data1 Data2 ...를 하나의 행으로 결합. 열의 수와 변수 구성이 같아야한다.
-rbind(Data1, Data2,...)
-
 ```R
-#1부터 50까지 홀수 행 가져오기
-data[seq(1,50,2),]
+# 가상의 예제 데이터 확인
+my_data = data.frame(id = 1:5,
+                     gender = c('M','F','F','F','M'),
+                     age = seq(15, 35, 5))
 
-tmp_df <- data.frame(AA = c(1:5), BB = c("A","A","B","B","B"))
+# 추가 변수를 포함한 데이터
+another_data = data.frame(region = c('Seoul','Seoul','Seoul','Busan','Busan'),
+                          amount = c(1,1,1,1,1))
 
-#
-
+# cbind( )로 열/변수 결합
+cbind(my_data, another_data)
 ```
 
 
+### 열제거
+Data 괄호 안에 지울 행의 열번호를 적고 마이너스 기호를 붙여준다. 열 명칭으로는 제거가 불가능함.  
+```R
+tmp_df <- data.frame(AA = c(1:6), BB = c("A","A","B","B","B","C"))
+tmp_df[, -1]
+```
 
+### 행추가
+변수구성이 같은 Data1 Data2 ...를 하나의 행으로 결합. 열의 수와 변수 구성이 같아야한다.  
+rbind(Data1, Data2,...)
+
+```R
+a1 <-  data.frame(name=c("aa","bb","cc"),value=seq(10,20,length.out = 3))
+a2 <-  data.frame(name=c("cc","dd","ee"),value=seq(30,50,length.out = 3))
+
+rbind(a1,a2)
+```
 
 ## 데이터 가공
 
