@@ -80,7 +80,7 @@ tmp_df <- data.frame(AA = c(1:6), BB = c("A","A","B","B","B","C"))
 tmp_df[, -1]
 ```
 
-### 행추가
+### 행 병합(추가)
 변수구성이 같은 Data1 Data2 ...를 하나의 행으로 결합. 열의 수와 변수 구성이 같아야한다.  
 rbind(Data1, Data2,...)
 
