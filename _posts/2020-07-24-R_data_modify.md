@@ -29,21 +29,21 @@ tag: R language, R 기초
 - subset[data,조건식]
 
 ```R
-Sample.df <- data.frame(AA = rep(letters[1:5],10), BB = sample(60:70, 50, replace = T))
+frmRand <- data.frame(AA = rep(letters[1:5],10), BB = sample(60:70, 50, replace = T))
 
 #AA컬럼의 값중에서 a인 값만 추출
-Sample.df[Sample.df$AA == "a",] 
-subset(Sample.df, AA == "a") 
+frmRand[frmRand$AA == "a",] 
+subset(frmRand, AA == "a") 
 
 #AA컬럼의 값중에서 a 와 b의 값만 추출
-Sample.df[Sample.df$AA %in% c("a","b"),]
-subset(Sample.df, AA %in% c("a","b"))
+frmRand[frmRand$AA %in% c("a","b"),]
+subset(frmRand, AA %in% c("a","b"))
 
 # 필요한 컬럼 Select
-Sample.df1 <- Sample.df
-Sample.df1[,c("AA","BB")]
-Sample.df1[,c(1,2)]
-Sample.df1[,c(-4,-5)]
+frmRand1 <- frmRand
+frmRand1[,c("AA","BB")]
+frmRand1[,c(1,2)]
+frmRand1[,c(-4,-5)]
 ```
 
 ## 행/열 추가/삭제
