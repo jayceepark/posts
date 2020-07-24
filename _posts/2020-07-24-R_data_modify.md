@@ -51,8 +51,8 @@ frmRand1[,c(-4,-5)]
 - Data$추가할행이름 <- 추가할값
 ```R
 tmp_df <- data.frame(AA = c(1:6), BB = c("A","A","B","B","B","C"))
-tmp_df$CC <- 1
-tmp_df[,c("AA","CC")] #tmp_df에 CC가 추가됨
+tmp_df$CC <- 1     #tmp_df에 CC가 추가됨
+tmp_df[,c("AA","CC")] 
 ```
 
 #### cbind 함수 사용 열 추가
