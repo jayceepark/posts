@@ -91,16 +91,21 @@ a2 <-  data.frame(name=c("cc","dd","ee"),value=seq(30,50,length.out = 3))
 rbind(a1,a2)
 ```
 
-## 데이터 가공
-
-rbind(data..., ncol=c, nrow=f, byrow=F))
-- data: 행렬로 생성할 벡터 객체
-- ncol: 생성할 행렬의 열 크기 지정 
-- nrow: 생성할 행렬의 행 크기 지정 ncol/nrow 중 하나만 사용 가능
-- byrow: 데이터를 행에 우선채우기 기준으로 행 또는 열을 사용할것인지 옵션, TRUE: 행부터 채움, FALSE: 열부터 채움
+## 데이터 합치기
+merge ( x=Data1, y=Data2, by.x = , by.y= , all=)
+- by.x or by.y: 조합조건의이름이같으면 by 하나만필요
+- all.x: x의 모든경우의수
+- all.y: y의 모든경우의수
+- all: 모든경우의수
 
 ```R
-A1.01.5
-1.52.02.02.02.52.52.52.53.03.03.03.03.0
-23456789101112131415
+a1 <-data.frame(name=c("aa","bb","cc"),value=seq(10,20,length.out = 3))
+a2 <-data.frame(name=c("cc","dd","ee"),value=seq(30,50,length.out = 3))
+a3 <-data.frame(name=c("aa","dd","ee","ff"),value=seq(20,80,length.out = 4),any=seq(0,3,1))
+
+#a1과 a2를 name 컬럼 기준으로 열병합(left join)
+merge(a1,a2,by.x='name',by.y='name')
+
+#a1과 a2를 name 컬럼 기준으로 열병합하고 a1은 전부 표시(outer join)
+merge(a1,a2,by.x='name',by.y='name',all.x=T)
 ```
